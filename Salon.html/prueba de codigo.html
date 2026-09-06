@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <body>
+    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Poller+One&display=swap">
+</head>
+<body>
+    <style>
+    :root{
+    --main-c:#FFC300;
+    --black-c:#000;
+  }
+  
+  /** Estilos Generales **/
+  html{
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  body{
+    margin: 0;
+    padding: 0;
+  }
+  a{
+    text-decoration: none;
+  }
+  a:visited{
+    color: inherit;
+  }
+  li{
+    list-style: none;
+  }
+  p{
+    font-size: 1.1rem;
+  }
+  h1{
+    font-size: 2.4rem;
+  }
+  h2{
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 1.8rem;
+  }
+  h4{
+    font-size: 1.6rem;
+  }
+  h5{
+    font-size: 1.4rem;
+  }
+  h6{
+    font-size: 1.2rem;
+  }
+  
+  
+  /* Enlaces & Botones*/
+  
+  .cta-main{
+    background-color: var(--main-c);
+    padding: 1rem 1rem ;
+    color: #fff;
+    font-size: bold;
+    border-radius: 2px;
+  }
+  </style>
+
+
+  <div class="wrap-header-hero">
+<header class="main-header">
+  <div class="header-wrap">
+    <div class="wrap-logo-header">
+      <img src="SELLO3FOTO.JPG" alt="logo elite" height="200" width="300">
+        <h1>ELITE NAILS CENTER ESTUDIO </h1>
+      </a>
+    </div>
+    <div class="wrap-nav-header">
+      <nav class="nav-header">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="toggle-menu">
+            <img src="data:image/png;base64,iVBORw0..." alt="Icono de menu">
+            </i>
+        </label>
+
+        <ul class="main-menu">
+          <li class="menu-item"><a href="wrap section">Galeria</a></li>
+          <li id="nav-main-contact" class="menu-item"><a href="Chat.html">Contacto</a></li>
+        </ul>
+
+      </nav>
+    </div>
+  </div>
+ </header>
+
+  <main class="main-section">
+
+  
+    
+      
+     
+
+ <style>
+
+
+header.main-header{
+  position: relative;    
+  top: 0;
+  width: 100%;
+  z-index:9999;
+}
+.header-wrap{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: transparent;
+  z-index: 999;
+}
+.wrap-logo-header{
+  display: flex;
+  align-items: center;
+  flex-basis: 15%;
+}
+.logo-header{
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+/* menu header */
+
+.nav-header{
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.nav-wrap-header{
+  display: flex;
+  flex-basis: 50%;
+}
+
+ul.main-menu{
+  display: flex;
+  width: 100%;
+  z-index: 99;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.1rem;
+}
+
+ul.main-menu #nav-main-contact{
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+  background-color: var(--main-c);
+  color: #fff;
+}
+li.menu-item{
+  margin: .75rem;
+  display: flex;
+}
+li.menu-item a{
+  padding: .5rem 1rem;
+  color: #fff;
+}
+li.menu-item a:hover{
+  color: var(--main-c);
+}
+
+i.toggle-menu img{
+  width: 27px;
+  z-index: 99;
+}
+
+i.toggle-menu{
+  display: none;
+  background-color: #fff;
+  border: none;
+  z-index: 9999;
+}
+
+input#check{
+  display: none;
+}
+
+@media (min-width:880px){
+  .header-wrap{
+    padding: .5rem 5rem;
+  }
+}
+
+@media (min-width:768px){
+  a.logo-header{
+    color: #fff;
+  }
+}
+
+@media (max-width:768px){
+  header.main-header{
+    margin-bottom: 4rem;
+  }
+  .header-wrap{
+    position: fixed;
+    width: 100%;
+    background-color: #fff;
+    padding: 0;
+    top: 0;
+    z-index: 9999;
+    height: 60px;
+  }
+  .wrap-logo-header{
+    position: fixed;
+    z-index:999;
+    top: 3%;
+    left: 3%;
+  }
+  .logo-header, li.menu-item a{
+    color: #222;
+  }
+
+  i.toggle-menu{
+    display: flex;
+  }
+  ul.main-menu,#nav-main-contact{
+    display: none;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  ul.main-menu{
+    position: fixed;
+    background-color: #fff;
+  }
+  label.checkbtn{
+    position: fixed;
+    right: 3%;
+    top: 3%;
+    z-index: 9999;
+    cursor: pointer;
+  }
+  #check:checked ~ ul{
+    display: flex;
+    z-index: 9;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    top: 0;
+    font-size: 2rem;
+  }
+}
+</style>
+
+<style>
+
+.wrap-header-hero{
+  background: linear-gradient(to bottom, rgb(0 0 0 / .75), rgb(0 0 0 / .5)), url(https://static.vecteezy.com/system/resources/thumbnails/048/005/786/small_2x/pink-windflowers-on-pebble-beach-closeup-image-romantic-floral-decor-fragile-windflowers-on-ocean-coast-rocks-close-upgraphy-summer-vacation-at-seaside-concept-realistic-photo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero-home-page{
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrap-hero-home-page{
+  color: #fff;
+  text-align: center;
+  width: 50%;
+}
+
+.wrap-hero-home-page p{
+  margin-bottom: 2rem;
+}
+
+@media (max-width:768px){
+  .wrap-hero-home-page{
+    width: 100%;
+    padding: 1rem;
+  }
+}
+</style>
+<!-- Tarjetas de comida -->
+<section class="wrap section">
+    <div class="wrap-title-section">
+      <h2>CATALOGO</h2>
+    </div>
+    <div class="column-4 columns">
+      <div style="background:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhSmBKvaWanMSG8ZRacKt0yTHkoERi4FDaaQ&s)center;background-size: cover;" class="tarjeta-rest" widt="350" heigt="200">
+        <div class="wrap-text_tarjeta-rest">
+          <h3>Tintes</h3>
+          <p>Busca un nuevo color para estar ala moda.</p>
+          <div class="cta-wrap_tarjeta-rest">
+            <div class="precio_tarjeta-rest">
+              <span>$20.00</span>
+            </div>
+            <div class="cta_tarjeta-rest">
+              <a href="Chat.html">Agendar cita!</a>
+              </div>
+          </div>
+        </div>  
+      </div>
+      <div style="background:url(https://www.olgacamargo.com/wp-content/uploads/2014/11/alisadoqueratinabrasilen%CC%83a02.jpg)center;background-size: cover;" class="tarjeta-rest">
+        <div class="wrap-text_tarjeta-rest">
+          <h3>Alisados</h3>
+          <p>Mejora la textura del cabello dejandolo mas suave y facil de peinar.</p>
+          <div class="cta-wrap_tarjeta-rest">
+            <div class="precio_tarjeta-rest">
+              <span>$35.00</span>
+            </div>
+            <div class="cta_tarjeta-rest">
+              <a href="Chat.html">Agendar Cita!</a>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div style="background:url(https://inesbe.com/wp-content/uploads/2024/04/woman-enjoying-pedicure-spa-treatment-at-a-beauty-2023-11-27-05-24-21-utc-1-1-1024x683.jpg)center;background-size: cover;" class="tarjeta-rest">
+        <div class="wrap-text_tarjeta-rest">
+          <h3>Pedicure</h3>
+          <p>Ayuda a prevenir problemas comunes como la apariencia de grietas sequedad de la piel y las infecciones por hongos.</p>
+          <div class="cta-wrap_tarjeta-rest">
+            <div class="precio_tarjeta-rest">
+              <span>$15.00</span>
+            </div>
+            <div class="cta_tarjeta-rest">
+              <a href="Chat.html">Agendar Cita!</a>
+            </div>
+          </div>
+        </div>  
+      </div>
+      <div style="background:url(https://i.ytimg.com/vi/D4V5Xfk-4sY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBn9hJB3ctsTjZ4VYT5OR-5m-uckg)center;background-size: cover;" class="tarjeta-rest">
+        <div class="wrap-text_tarjeta-rest">
+          <h3>Uñas Acrilicas Basicas</h3>
+          <p>Reduce el estres, El proceso de la manicura puede ser rejalante y ayuda a reducir el estres.</p>
+          <div class="cta-wrap_tarjeta-rest">
+            <div class="precio_tarjeta-rest">
+              <span>$!2.00</span>
+            </div>
+            <div class="cta_tarjeta-rest">
+              <a href="Chat.html">Agendar Cita</a>
+            </div>
+          </div>
+        </div>  
+      </div>
+    </div>
+  </section>
+
+
+<style>
+/* Tarjetas de Comida */
+.section{
+  max-width: 1200px;
+  margin: 8rem auto;
+  padding: 1rem;
+}
+
+.column-4{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.tarjeta-rest{
+  background-repeat: no-repeat;
+  height: 400px;
+  border-radius: 6px;
+  padding: 1rem .5rem;
+  display: flex;
+  align-items: end;
+}
+.wrap-text_tarjeta-rest{
+  color: #fff;
+  padding: .5rem;
+  border-radius: 6px;
+  background:linear-gradient(to top, rgb(0 0 0 / .5), rgb(0 0 0 / .5));
+}
+
+.wrap-text_tarjeta-rest p{
+  color: #f2f2f2;
+}
+.cta-wrap_tarjeta-rest{
+  display: flex;
+  justify-content: space-between;
+}
+
+.precio_tarjeta-rest span{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.cta_tarjeta-rest{
+  background-color: var(--main-c);
+  padding: .25rem 1rem;
+  border-radius: 4px;
+}
+.cta_tarjeta-rest a{
+  color: #fff;
+  font-weight: bold;
+}
+
+@media (max-width:1200px){
+  .column-4{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media (max-width:880px){
+  .column-4{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width:640px){
+  .column-4{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+</style>
+
+<section class="wrap section">
+    <div class="wrap-title-section">
+      <h2>Servicios de Elite Nails Center Estudio</h2>
+    </div>
+    <div class="column-3 columns">
+      <div style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkbBhypqxQ6jdi9ttVQiJbFTsxgjyLEW7EWw&s) center;background-size: cover;" class="menu-restaurante">
+        <h3>Servicio #1</h3>
+      <hr>
+      <h4> UÑAS ACRILICAS</h4>
+      <p>Uñas Naturales.</p>
+      <p>Baby boomer.</p>
+      <p>Tecnicas Encapsulados.</p>
+      <p>Diseño 3D.</p>
+      <br>
+      <h3>Servicio #2</h3>
+      <h4>SERVICIOS DE ALISADOS</h4>
+      <p>Alisado Mixto.</p>
+      <p>Alisado de Bambu.</p>
+      <p>Alisado de Argan.</p>
+      <p>Alisado de chocolate.</p>
+      <br>
+      <p class="precio-menu">Por precio puedes escribirnos</p>
+      </div>
+      <div style="background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzqJZPc5d846sK9eTo9orxcrCwTGfNa1jqqQ&s) center;background-size: cover;" class="menu-restaurante">
+      <h3>Servicio #3</h3>
+      <hr>
+      <h4>Tintes</h4>
+      <p>Extraccion de color.</p>
+      <p>Barrido de color.</p>
+      <p>Mechas frontales.</p>
+      <p>Tinte.</p>
+      <br>
+      <h3>Servicio #4</h3>
+      <h4>PEDICURE</h4>
+      <p>Pedicure clinico.</p>
+      <p>Pedicure Spa.</p>
+      <p>Pedicure basico.</p>
+      <br>
+      <p class="precio-menu">Por precio puedes escribirnos</p>
+      </div>
+      <div style="background: url(https://www.cejasperfectaseyebrow.com/cejas/archivo/cejasperfectas-031RNY20231008.jpg) center;background-size: cover;" class="menu-restaurante">
+        <H3>Servicio #5</H3>
+      <hr>
+      <h4>DEPILACION DE CEJAS</h4>
+      <p>Diseño de cejas.</p>
+      <p>Depilacion con gilet.</p>
+      <p>Depilacion con cera.</p>
+      <p>Depilacon con Pinzas.</p>
+      <br>
+      <h3>Servicios #6</h3>
+      <h4>HONDULADOS</h4>
+      <p>Hondulacion.</p>
+      <p>Colochos Permanentes.</p>
+      <br>
+      <p class="precio-menu">Por precio puedes escribirnos</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+.column-3{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.menu-restaurante{
+  color: #fff;
+  text-align: center;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  display: flex;
+  flex-flow: column;
+}
+hr{
+  background: var(--main-c);
+  height: 2px;
+  width: 30px;
+  border: none;
+}
+.precio-menu{
+  font-weight: bold;
+}
+.precio-menu span{
+  font-size: 2rem;
+}
+
+@media (max-width:880px){
+  .column-3{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+@media (max-width:640px){
+  .column-3{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+  </style>
+
+  
+  <section class="section">
+    <div class="wrap-title-section">
+      <h2>ACADEMIA: ELITE NAILS CENTER ESTUDIO </h2>
+    </div>
+    <div class="column-4 galeria-platos">
+      <div class="imagen-galeria">
+        <img src="foto 7academic.jpg" alt="">
+      </div>
+      <div class="imagen-galeria">
+        <img src="FOTO 3.academic.pg" alt="">
+      </div>
+      <div class="imagen-galeria">
+        <img src="foto 1academic.jpg" alt="">
+      </div>
+      <div class="imagen-galeria">
+        <img src="foto 2academic.jpg" alt="">
+      </div>
+      <div class="imagen-galeria">
+        <img src="foto 5academic.jpg" alt="">
+      </div>
+      <div class="imagen-galeria">
+        <img src="foto 6academic.jpg" alt="">
+      </div>
+      <div class="imagen-galeria">
+        <img src="foto4 academic.jpg" alt="">
+      </div>
+      <div class="imagen-galeria">
+        <img src="foto8 academic.jpg" alt="">
+      </div>
+      <div class="imagen-galeria">
+        <img src="foto 9academic.jpg" alt="">
+      </div>
+      <div class="imagen-galeria">
+        <img src="foto 10academic.jpg" alt="">
+      </div>
+      <div class="imagen-galeria">
+        <img src="foto 11academic.jpg" alt="">
+      </div>
+      
+    </div>
+  </section>
+
+  <style>
+    
+
+.imagen-galeria, .imagen-galeria img{
+  max-width: 275px;
+  border-radius: 4px;
+}
+
+@media (max-width:880px){
+  .galeria-platos{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+  }
+}
+  </style>
+
+  
+  <section class="section">
+    <div class="wrap-title-section">
+      <h2>CURSOS INTENCIVOS</h2>
+    </div>
+    <div class="card-wrap">
+      <article class="card">
+        <header class="header-card">
+          <img src="basic3.jpg" alt="">
+        </header>
+        <footer class="footer-card">
+          <div class="categoria-card">
+            <span>NIVEL BASICO</span>
+          </div>
+          <div class="texto-card">
+            <h3>TE OFRECE:</h3>
+            <p>  Teoria educacional, practicas completas, decoracion a pincel, Tecnicas de limado, preparacion de la uña natural, Anatomia y Lenguaje tecnico, Medidas, calibracion de perlas, Grados de pincel </p>
+          </div>
+          <div class="perfil-card">
+            <div class="img-perfil-card">
+              <img src="basic3.jpg" alt="">
+            </div>
+            <div class="text-perfil-card">
+            </div>
+          </div>
+        </footer>
+      </article>
+      <article class="card">
+        <header class="header-card">
+          <img src="intermed2.jpg" alt="">
+        </header>
+        <footer class="footer-card">
+          <div class="categoria-card">
+            <span>NIVEL INTERMEDIO</span>
+          </div>
+          <div class="texto-card">
+            <h3>TE OFRECE:</h3>
+            <p> Teoria educacional, practicas completas, decoracion a pincel y 3D, puntas de salon, Diseños encapsulados.</p>
+          </div>
+          <div class="perfil-card">
+            <div class="img-perfil-card">
+              <img src="img/perfil-2.jpg" alt="">
+            </div>
+            <div class="text-perfil-card">
+            </div>
+          </div>
+        </footer>
+      </article>
+      <article class="card">
+        <header class="header-card">
+          <img src="avansad1.jpg" alt="">
+        </header>
+        <footer class="footer-card">
+          <div class="categoria-card">
+            <span>NIVEL AVANZADO</span>
+          </div>
+          <div class="texto-card">
+            <h3>TE OFRECE:</h3>
+            <p>Teoria educacional, Decoracion a pincel y 3D, Formacion con tip y Molde (escultura), Puntas extremas, Clase 3D avanzado, Comic, Flat, Acrilico de pie con diseños, ecapsuladas y Diseños avanzadas, Diplomado y Graduacion.</p>
+          </div>
+          <div class="perfil-card">
+            <div class="img-perfil-card">
+              <img src="img/perfil-3.jpg" alt="">
+            </div>
+            <div class="text-perfil-card">
+            </div>
+          </div>
+        </footer>
+      </article>
+    </div>
+  </section>
+
+  <style>
+
+article.card{
+  max-width: 350px;
+  background-color: #f8f8f8;
+  margin: 1rem;
+  box-shadow: 0px 0px 12px #d7d7d7;
+}
+.header-card{
+  display: flex;
+}
+.header-card img{
+  border-radius: 8px 8px 0 0;
+  max-height: 200px;
+  height: 200px;
+  width: 100%;
+}
+
+.categoria-card{
+  margin-top: 1rem;
+}
+
+.categoria-card span{
+  background: var(--main-c);
+  border-radius: 4px;
+  padding: .2rem .5rem;
+  color: #fff;
+}
+
+.card footer{
+  display: flex;
+  flex-flow: column;
+  padding: 0 1rem;
+}
+
+.perfil-card{
+  display: flex;
+  align-items: center;
+}
+
+.img-perfil-card{
+  display: flex;
+}
+
+.img-perfil-card img{
+  width: 50px;
+  border-radius: 50%;
+  margin: 1rem 1rem 1rem 0;
+}
+.text-perfil-card{
+  display: flex;
+  flex-flow: column;
+}
+.text-perfil-card span:nth-child(2){
+  color: #cfcfcf; 
+}
+.card-wrap{
+  display: flex;
+  flex-flow: wrap;
+}
+
+@media (max-width:768px){
+  .card-wrap{
+    justify-content: center;
+  }
+}
+
+  </style>
+
+<footer class="footer">
+    <div class="wrap-footer">
+      <div class="text-element-footer element-footer">
+        <h3>ACADEMIA EDUCADORA ESPECIALIZADA EN ACRILISMO</h3>
+        <p>Te enseñamos tecnicas profesionales que resaltan la belleza de las uñas.</p>
+      </div>
+      <div class="text-element-footer element-footer">
+        <h5>Dirección</h5>
+        <ul>
+          <li>3era av Sur Entre Calle Gerardo Barrios Y Primera Calle Poniente.Ahuachapan</li>
+        </ul>
+      </div>
+      <div class="text-element-footer element-footer">
+        <h5>Más información Escribenos</h5>
+        <ul>
+          <li><a href="CHAT 2.HTML">whatsapp</a></li>
+          <li><a href="https://web.facebook.com/profile.php?id=61556199029341">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-creds">
+      <div class="copy-creds">
+        <p>©2024 ACADEMIA ELITE NAILS CENTER ESTUDIO. ¡¡Aprender 📖✨ es crecer 📚🌷🚀✨!!</p>
+      </div>
+      <div class="legal-creds">
+        <ul>
+          <li><a href="">Nuestras Redes</a></li>
+          <li><a href="CHAT 2.HTML">WhatsApp</a></li>
+          <li><a href="https://web.facebook.com/profile.php?id=61556199029341">facebook</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
+
+<style>
+
+
+footer{
+  background-color: #fff;
+  color: var(--black-c);
+}
+
+footer ul{
+  padding: 0;
+}
+
+.wrap-footer{
+  display: grid;
+  grid-template-columns: 30% 15% 15% 20%;
+  column-gap: 5%;
+  padding: 1rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+element-footer h5{
+  margin: 1rem 0;
+}
+
+.text-element-footer{
+  line-height: 2;
+}
+
+.text-element-footer li a{
+  color: var(--main-c);
+}
+
+.rrss-element-footer ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.rrss-element-footer img{
+  width: 45px;
+}
+.rrss-element-footer li{
+  margin-right: 1rem;
+}
+
+.footer-creds{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  color: #576171;
+  font-size: .9rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.legal-creds ul{
+  display: flex;
+}
+
+.legal-creds ul li{
+  padding-right: 1rem;
+}
+
+.legal-creds ul li a{
+  color: #576171;
+}
+
+@media (max-width:768px){
+  .wrap-footer{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (max-width:480px){
+  .wrap-footer{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media (max-width:320px){
+  .footer-creds{
+    flex-flow: column;
+  }
+}
+</style>
+
+
+

@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Academia: El lugar donde te enseñaremos de la mejor manera.">
+    <title>¡¡ELITE NAILS CENTER ESTUDIO!!</title>
+    <style>
+        
+
+        .contact-section {
+            background: linear-gradient(135deg, #FF4136 0%, #FF851B 100%);
+            border-radius: 25px;
+            padding: 4em 2em;
+            margin-top: 4em;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M50 25C55.5 25 60 29.5 60 35C60 40.5 55.5 45 50 45C44.5 45 40 40.5 40 35C40 29.5 44.5 25 50 25Z' fill='rgba(255,255,255,0.1)'/%3E%3C/svg%3E") repeat;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .contact-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .contact-header {
+            text-align: center;
+            margin-bottom: 3em;
+        }
+
+        .contact-header h2 {
+            color: white;
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        .contact-header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .whatsapp-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2em;
+            margin-top: 2em;
+        }
+
+        .whatsapp-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 2em;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5em;
+        }
+
+        .whatsapp-card:hover {
+            transform: translateY(-10px);
+            border-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .card-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .whatsapp-card:hover .card-icon {
+            transform: scale(1.1) rotate(10deg);
+        }
+
+        .card-title {
+            font-size: 1.5em;
+            font-weight: 600;
+            margin-bottom: 0.5em;
+        }
+
+        .card-description {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 1.5em;
+        }
+
+        .whatsapp-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8em;
+            padding: 1em 2em;
+            background-color: #25D366;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(37, 211, 102, 0.4);
+            width: 100%;
+            justify-content: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .whatsapp-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.6);
+            background-color: #128C7E;
+        }
+
+        .contact-hours {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 2em;
+            margin-top: 3em;
+            text-align: center;
+        }
+
+        .hours-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1em;
+            margin-top: 1em;
+        }
+
+        .hours-item {
+            padding: 1em;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .contact-footer {
+            text-align: center;
+            margin-top: 3em;
+            padding-top: 2em;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .contact-section {
+                padding: 3em 1.5em;
+            }
+
+            .whatsapp-cards {
+                grid-template-columns: 1fr;
+            }
+
+            .card-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+    <section id="contacto" class="contact-section">
+        <div class="contact-content">
+            <div class="contact-header">
+                <h2>¡¡Contacta con Nosotros!!</h2>
+                <H1>"✨ Descubre tu mejor versión con nosotros. 💇‍♀💖"</H1>
+                <p>¡¡Estamos listos para Agendar tu cita!!</p>
+            </div>
+
+            <div class="whatsapp-cards">
+               
+                <div class="whatsapp-card">
+                    <img src="foto25.jpg" alt="Foto de Esmeralda Garcia" class="card-icon">
+                    <div class="card-content">
+                        <h3 class="card-title">Agendador de citas </h3>
+                        <p class="card-description">¿Interesado en algun servicio? ¡Contacta con nuestro equipo!</p>
+                        <p>Atiende: Esmeralda Garcia</p>
+                        <a href="https://wa.me/+50373979488?text=¡Hola!%20Me%20interesa%20información%20sobre%20ventas%20al%20mayoreo%20de%20Picositas" 
+                           class="whatsapp-button" 
+                           target="_blank" 
+                           rel="noopener noreferrer">
+                            📱 Servicio al cliente
+                        </a>
+                    </div>
+                </div>
+
+                <div class="whatsapp-card">
+                <div style="text-align: center;">
+                    <img src="foto25.jpg" alt="Esmeralda García" style="width: 80px; height: 80px; border-radius: 50%; margin-bottom: 10px;">
+                    <h2>Contacta con Esmeralda García</h2>
+                    <a href="tel:+50373979488" class="call-button">Llamar +503 7397-9488</a>
+                </div>
+            </div>
+                
+                <style>
+                    .call-button {
+                        background-color: #4CAF50; /* Color de fondo del botón */
+                        color: white; /* Color del texto */
+                        padding: 15px 20px; /* Espaciado interno */
+                        border: none; /* Sin borde */
+                        border-radius: 5px; /* Bordes redondeados */
+                        font-size: 16px; /* Tamaño de fuente */
+                        text-decoration: none; /* Sin subrayado */
+                        display: inline-block; /* Para que el botón tenga propiedades de bloque */
+                        margin-top: 10px; /* Espaciado superior */
+                    }
+                    .call-button:hover {
+                        background-color: #45a049; /* Color de fondo al pasar el ratón */
+                    }
+                </style>
+            </div>
+
+            <div class="contact-hours">
+                <h3>Horario de Atención</h3>
+                <div class="hours-grid">
+                    <div class="hours-item">
+                        <strong>Lunes a Viernes</strong>
+                        <p>8:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="hours-item">
+                        <strong>Sábados</strong>
+                        <p>8:00 AM - 5:00 PM</p>
+                    </div>
+                    <div class="hours-item">
+                        <strong>Domingos</strong>
+                        <p>8:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-footer">
+                <p>© 2024 ELITE NAILS CENTER ESTUDIO - "✨ Descubre tu mejor versión con nosotros. 💇‍♀💖" .</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
